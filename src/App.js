@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
@@ -15,6 +16,7 @@ function App() {
       {page === "Contact" && <Contact />}
       {page === "Portfolio" && <Portfolio />}
       {page === "Resume" && <Resume />}
+      <Footer />
     </div>
   );
 }
